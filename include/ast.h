@@ -11,8 +11,11 @@ anode_t *endnode(ast_t*, anode_t*);
 ast_t* get_ast(token_t**);
 
 typedef enum {
+    __ST_UNIDENTIFIED,
     ST_IF,
     ST_ELSE,
+    ST_FOR,
+    ST_WHILE,
     ST_ADD,
     ST_SUB,
     ST_MUL,
